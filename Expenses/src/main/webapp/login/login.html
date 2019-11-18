@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tower Hub</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id="bg">
+        <form class="tower-dock" onsubmit="login(event)">
+            <h1 class="tower-hub">Clearnace</h1>
+            <!-- <label for="inputUsername" class="sr-only">Username</label> -->
+            <input type="text" id="inputUsername" class="form-control" placeholder="username" required autofocus>
+            <!-- <label for="inputPassword" class="sr-only">Password</label> -->
+            <input type="password" id="inputPassword" class="form-control" placeholder="password" required>
+            <p id="error-message"></p>
+            <button type="submit" class="form-control" placeholder="Log In">Log In</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+        </form>
+    </div>
+</body>
+
+<script src="./login.js"></script>
+
+</html>
