@@ -17,6 +17,11 @@
   		<servlet-class>com.fdesign.servlets.AuthServlet</servlet-class>
   	</servlet>
   	
+  	<servlet>
+  		<servlet-name>InvalidateSessionServlet</servlet-name>
+  		<servlet-class>com.fdesign.servlets.InvalidateSessionServlet</servlet-class>
+  	</servlet>
+  	
   	<servlet-mapping>
   		<servlet-name>AuthServlet</servlet-name>
   		<url-pattern>/auth/*</url-pattern>
@@ -30,6 +35,11 @@
   	<servlet-mapping>
   		<servlet-name>ReimbursementServlet</servlet-name>
   		<url-pattern>/reimbursements/*</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet-mapping>
+  		<servlet-name>InvalidateSessionServlet</servlet-name>
+  		<url-pattern>/invalidate/*</url-pattern>
   	</servlet-mapping>
 		
 </web-app>

@@ -25,9 +25,18 @@ function newAllSort(event) {
     refreshTable();
 }
 
-// function logOut(event) {
-    
-// }
+function logOut(event) {
+    event.preventDefault();
+
+    fetch('http://localhost:8080/Expenses/invalidate', {
+        credentials: 'include'
+    })
+        .then(resp =>{
+            console.log("Now logging out")
+            window.location = '../login/login.html';
+        })
+}
+
 
 function newPendingSort(event) {
     event.preventDefault();
